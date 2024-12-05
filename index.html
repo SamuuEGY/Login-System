@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login System</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="form-container sign-up">
+					<h1>Hello There!</h1>
+					<div
+						class="signin_up-container d-flex align-items-center align-content-center flex-column"
+					>
+						<div class="input-field w-100">
+							<i class="fa-regular fa-user"></i>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Name"
+								id="signupName"
+							/>
+						</div>
+						<div class="input-field w-100">
+							<i class="fa-regular fa-envelope"></i>
+							<input
+								type="email"
+								class="form-control"
+								placeholder="Email"
+								id="signupEmail"
+							/>
+						</div>
+						<div class="input-field w-100">
+							<i class="fa-solid fa-lock"></i>
+							<input
+								type="password"
+								class="form-control"
+								placeholder="Password"
+								id="signupPassword"
+							/>
+						</div>
+						<div class="checkbox-container form-check">
+							<input
+								type="checkbox"
+								class="form-check-input"
+								id="conditions"
+								required
+							/>
+							<label class="form-check-label" for="conditions">
+								I've read and agree to
+								<a href="#" class="condition">Terms & Conditions</a>
+							</label>
+						</div>
+						<p id="signupIncorrect"></p>
+						<button onclick="signUp()" class="btn btn-primary">Create Account</button>
+					</div>
+			</div>
+			<div class="form-container sign-in">
+					<h1>Welcome Back!</h1>
+					<div
+						class="signin_up-container d-flex align-items-center align-content-center flex-column"
+					>
+						<div class="input-field w-100">
+							<i class="fa-regular fa-envelope"></i>
+							<input
+								type="email"
+								class="form-control"
+								placeholder="Email"
+								autofocus
+								id="signinEmail"
+							/>
+						</div>
+						<div class="input-field w-100">
+							<i class="fa-solid fa-lock"></i>
+							<input
+								type="password"
+								class="form-control"
+								placeholder="Password"
+								id="signinPassword"
+							/>
+						</div>
+						<p id="signinIncorrect"></p>
+						<button onclick="login()" class="btn btn-primary">Sign In</button>
+						<a href="#">Forget Your Password?</a>
+					</div>
+			</div>
+			<div class="toggle-container">
+				<div class="toggle">
+					<div class="toggle-panel toggle-left">
+						<h1>Join us to our <br />WORLD</h1>
+						<p>Do you already join before?</p>
+						<button class="hidden" id="login">Sign In</button>
+					</div>
+					<div class="toggle-panel toggle-right">
+						<h1>Our WORLD <br />waiting for you</h1>
+						<p>First time here?</p>
+						<button class="hidden" id="register">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

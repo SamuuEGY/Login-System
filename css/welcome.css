@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #CEDDE6;
+    height: 80vh;
+}
+div.container a {
+    color: #001C2B;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
