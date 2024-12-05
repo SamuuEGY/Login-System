@@ -7,7 +7,6 @@ var signupPassword = document.getElementById('signupPassword');
 var checkbox = document.getElementById('conditions');
 var loginEmail = document.getElementById('loginEmail');
 var loginPassword = document.getElementById('loginPassword');
-var username = localStorage.getItem('sessionUsername')
 
 registerButton.addEventListener('click', () => {
     container.classList.add('active');
@@ -17,9 +16,6 @@ loginButton.addEventListener('click', () => {
     container.classList.remove('active');
 });
 
-if (username) {
-    document.getElementById('username').innerHTML = "Welcome " + username;
-}
 
 var signUpArray = []
 if (localStorage.getItem('users') == null) {
@@ -129,7 +125,6 @@ function login() {
         document.getElementById('signinIncorrect').innerHTML = '<span class="p-2 text-danger">Incorrect email or password</span>';
     }
 }
-
 
 
 
