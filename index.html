@@ -14,14 +14,14 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
+	<body class="d-flex align-items-center justify-content-center flex-column">
 		<div class="container" id="container">
-			<div class="form-container sign-up">
+			<div class="form-container d-flex align-items-center justify-content-center flex-column sign-up">
 					<h1>Hello There!</h1>
 					<div
 						class="signin_up-container d-flex align-items-center align-content-center flex-column"
 					>
-						<div class="input-field w-100">
+						<div class="input-field d-flex align-items-center w-100">
 							<i class="fa-regular fa-user"></i>
 							<input
 								type="text"
@@ -30,7 +30,7 @@
 								id="signupName"
 							/>
 						</div>
-						<div class="input-field w-100">
+						<div class="input-field d-flex align-items-center w-100">
 							<i class="fa-regular fa-envelope"></i>
 							<input
 								type="email"
@@ -39,7 +39,7 @@
 								id="signupEmail"
 							/>
 						</div>
-						<div class="input-field w-100">
+						<div class="input-field d-flex align-items-center w-100">
 							<i class="fa-solid fa-lock"></i>
 							<input
 								type="password"
@@ -48,7 +48,7 @@
 								id="signupPassword"
 							/>
 						</div>
-						<div class="checkbox-container form-check">
+						<div class="checkbox-container d-flex align-items-center gap-2 form-check">
 							<input
 								type="checkbox"
 								class="form-check-input"
@@ -64,12 +64,12 @@
 						<button onclick="signUp()" class="btn btn-primary">Create Account</button>
 					</div>
 			</div>
-			<div class="form-container sign-in">
+			<div class="form-container d-flex align-items-center justify-content-center flex-column sign-in">
 					<h1>Welcome Back!</h1>
 					<div
 						class="signin_up-container d-flex align-items-center align-content-center flex-column"
 					>
-						<div class="input-field w-100">
+						<div class="input-field d-flex align-items-center w-100">
 							<i class="fa-regular fa-envelope"></i>
 							<input
 								type="email"
@@ -79,7 +79,7 @@
 								id="signinEmail"
 							/>
 						</div>
-						<div class="input-field w-100">
+						<div class="input-field d-flex align-items-center w-100">
 							<i class="fa-solid fa-lock"></i>
 							<input
 								type="password"
@@ -93,14 +93,14 @@
 						<a href="#">Forget Your Password?</a>
 					</div>
 			</div>
-			<div class="toggle-container">
+			<div class="toggle-container position-absolute overflow-hidden">
 				<div class="toggle">
-					<div class="toggle-panel toggle-left">
+					<div class="toggle-panel d-flex align-items-center justify-content-center flex-column text-center position-absolute toggle-left">
 						<h1>Join us to our <br />WORLD</h1>
 						<p>Do you already join before?</p>
 						<button class="hidden" id="login">Sign In</button>
 					</div>
-					<div class="toggle-panel toggle-right">
+					<div class="toggle-panel d-flex align-items-center justify-content-center flex-column text-center position-absolute toggle-right">
 						<h1>Our WORLD <br />waiting for you</h1>
 						<p>First time here?</p>
 						<button class="hidden" id="register">Sign Up</button>
